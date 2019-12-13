@@ -26,11 +26,8 @@ generate tuples:
 
 
 
-0 + 5   ||
-5 + 0  same thing 
 
-1 + 4
-4 + 1
+
 2 + 3
 3 + 2
 
@@ -41,9 +38,16 @@ generate tuples:
 1 + 1 + 2 + 1
 1 + 1 + 1 + 2
 
+2 + 1 + 2
+2 + 2 + 1
+
 1 + 1 + 3
 1 + 3 + 1
 3 + 1 + 1
+
+constraint: cookie monster can eat 3 at the most at one time
+
+
 
 Integer Partition
 # https://en.wikipedia.org/wiki/Partition_%28number_theory%29
