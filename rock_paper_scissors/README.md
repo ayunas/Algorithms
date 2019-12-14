@@ -8,6 +8,25 @@ For example, given n = 2, your function should output the following:
 [['rock', 'rock'], ['rock', 'paper'], ['rock', 'scissors'], ['paper', 'rock'], ['paper', 'paper'], ['paper', 'scissors'], ['scissors', 'rock'], ['scissors', 'paper'], ['scissors', 'scissors']]
 ```
 
+## [U]PER - Understand
+1 => 3^1 = 3
+2 => 3^2 = 9
+3 => 3^3 (27)
+n => 3^n possibilities. 
+
+## U[P]ER - Planning
+-n comes in, specifying the number of players.
+define a set for the possible values : {'rock','paper','scissors'}
+-length of the set (3 in this case).  **n power.
+-generate s**n lists of s elements in it.  
+or 3^2 = 9 lists for 2 players playing RPS
+-loop through the set, and for each element push itself with each other member, including itself.
+
+
+
+
+
+
 Your output should be a list of lists containing strings. Each inner list should have length equal to the input n.
 
 ## Testing

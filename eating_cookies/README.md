@@ -11,6 +11,54 @@ For example, for a jar of cookies with `n = 3` (the jar has 3 cookies inside it)
 
 Thus, `eating_cookies(3)` should return an answer of 4.
 
+## [U]PER - Understand
+* what is the math behind calculating the # of ways to eat a cookie? 
+* what are the ways to add to n?  not including 0?
+* example: n=5
+
+n = 4
+generate tuples:
+    (4,0)   (1,1,1,1)   (1,1,2)
+    (3,1)               (2,1,1)
+    (2,2)               (1,2,1)
+    (1,3)
+    (0,4)
+
+
+
+
+
+2 + 3
+3 + 2
+
+1 + 1 + 1 + 1 + 1
+
+2 + 1 + 1 + 1
+1 + 2 + 1 + 1
+1 + 1 + 2 + 1
+1 + 1 + 1 + 2
+
+2 + 1 + 2
+2 + 2 + 1
+
+1 + 1 + 3
+1 + 3 + 1
+3 + 1 + 1
+
+constraint: cookie monster can eat 3 at the most at one time
+
+
+
+Integer Partition
+# https://en.wikipedia.org/wiki/Partition_%28number_theory%29
+issue: classical integer partition doesnt take into account order.  
+so 1 + 4 === 4 + 1.  counts as 1 partition, not 2.
+
+Partitions are often written in tuple notation 
+https://artofproblemsolving.com/wiki/index.php/Partition_(combinatorics)
+
+
+
 ## Testing
 
 For this problem, there's a test that tests your implementation with small inputs (n <= 10). There's also a separate test that tests your implementation with large inputs (n >= 50). 
@@ -20,6 +68,8 @@ You'll find that without implementing performance optimizations into your soluti
 To run the tests separately, run `python test_eating_cookies.py -k small` in order to run just the small input test. Run `python test_eating_cookies.py -k large` to execute just the large input test. If you want to run both tests, just run `python test_eating_cookies.py`.
 
 You can also test your implementation manually by executing `python eating_cookies.py [n]`.
+
+
 
 ## Hints
 

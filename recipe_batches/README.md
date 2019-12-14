@@ -11,6 +11,13 @@ Write a function that receives a recipe in the form of a dictionary, as well as 
 }
 ```
 
+## [U]PER : Understand
+{required ingredient counts} {actual ingredient counts} => # of recipe batches that can be made.  
+
+if any actual count < corresponding required ingredient count -> return 0 cuz not enough to make 1 full recipe.
+
+
+
 The keys will be the ingredient names, with their associated values being the amounts. In the case of the recipe dictionary, these amounts will represent the amount of each ingredient needed for the recipe, while in the case of the ingredients dictionary, the amounts represent the amounts available to you. 
 
 Your function should output the maximum number of whole batches that can be made for the supplied recipe using the ingredients available to you, as indicated by the second dictionary. 

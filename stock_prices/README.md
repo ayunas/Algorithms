@@ -6,6 +6,18 @@ Write a function `find_max_profit` that receives as input a list of stock prices
 
 For example, `find_max_profit([1050, 270, 1540, 3800, 2])` should return 3530, which is the maximum profit that can be made from a single buy and then sell of these stock prices. 
 
+## [U]PER : Understand
+What is shorting?
+What are we buying from the array?
+what are the values in the array representing?  the price represents various values of a single stock as time passes from left to right.
+the sample is returning 3530 because if you buy at 270, and sell at 3800, you get a profit.  
+what if you buy at the last value?  when can you sell it?  it makes sense to not be able to sell, because the opportunity to buy and sell has finished.  
+
+## U[P]ER : Planning
+how to represent buying and selling in code
+
+
+
 ## Testing
 
 Run the test file by executing `python test_stock_prices.py`.
